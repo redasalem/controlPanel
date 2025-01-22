@@ -1,0 +1,11 @@
+html{
+    box-sizing: border-box;
+    direction: rtl;
+
+}
+*,*::after,*::before{
+    font-size: $font-base;
+    color: $color-content;
+    line-height: $line-hight;
+    background-color: $background-color;
+}
