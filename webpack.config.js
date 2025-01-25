@@ -7,6 +7,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
     entry: {
         app: './src/index.js',
+        'assets/js/banner':'./src/assets/js/banner.js',
     },
 
     output: {
@@ -33,6 +34,16 @@ module.exports = {
                 test: /\.html$/, 
                 use: ['html-loader'],
             },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
+              },
             {
                 test: /\.(sa|sc|c)ss$/, 
                 use: [
@@ -67,6 +78,27 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
+            chunks:['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'components/button.html',
+            template: './src/components/button.html',
+            chunks:['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'components/textfield.html',
+            template: './src/components/textfield.html',
+            chunks:['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'components/card.html',
+            template: './src/components/card.html',
+            chunks:['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'components/banner.html',
+            template: './src/components/banner.html',
+            chunks:['app','assets/js/banner']
         }),
     ],
 };

@@ -1,0 +1,33 @@
+.c-card{
+    @include e-card;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: spacing("normal");
+    width: 100%;
+}
+.c-card_title{
+    flex-grow: 1;
+    color: $color-text-subdued;
+    font-weight: normal;
+    margin-left: spacing();
+    background-color: transparent;
+}
+
+.c-card_desc{
+    width: 100%;
+    font-size: 14px;
+    background-color: transparent;
+}
+.c-card--no-desc{
+    align-items: center;
+    .c-card_title{
+        margin-bottom:0px;
+    }
+}
+.c-card--no-action{
+    .c-card_desc{
+        margin-top: 0px;
+    }
+}
+

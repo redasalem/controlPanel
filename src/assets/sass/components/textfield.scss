@@ -1,0 +1,36 @@
+.c-textfield{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+   
+}
+.c-textfield_label{
+    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: spacing("extra-small");
+}
+.c-textfield_input,
+.c-textfield_textarea{
+    background-color: $backgroud-color-input;
+    padding: 8px 12px;
+    margin-bottom:spacing("none") ;
+    width: 100%;
+    border-radius: 3px;
+    height: 36px;
+    border: 1px solid darken($color-white, 15%);
+    box-shadow: inset 0 1px 2px 0 rgba(darken($color-primary, 30%), 0.2);
+    &:focus{
+        outline: none;
+        box-shadow: inset 0 1px 2px 0 rgba(darken($color-primary, 30%), 0.2),
+         0 0 0 2px $color-primary;
+        }
+
+}
+.c-textfield_textarea{
+    height: 150px;
+}
+.c-textfield_hint{
+    color: $color-title-subdued;
+    font-size: 13px;
+    margin-top: 8px; 
+}

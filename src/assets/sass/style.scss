@@ -3,16 +3,23 @@
 @import"config/colors.scss";
 
 @import"utilites/spacing.scss";
+@import"utilites/mixin-card.scss";
+
 
 @import"base/fonts.scss";
 @import"base/global.scss";
 @import"base/typography.scss";
 @import"base/links.scss";
+@import'components/demo.scss';
+@import'components/_components.scss';
 
 
 
 
-$background-color:gold;
-body{
-    background-color: $background-color;
-}
+
+
+
+// $background-color:silver;
+// body{
+//     background-color: $background-color;
+// }
