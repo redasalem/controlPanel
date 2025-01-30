@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chart components page</title>
+    <script type="text/html" src="{require('../index.js')}"></script>
+</head>
+<body>
+    <div class="component-container">
+        <div class="c-chart">
+            <header class="c-chart_header">
+                <div class="c-chart_header_title">
+                    <h3 class="c-chart_title">المبيعات</h3>
+                    <span class="c-chart_data"> 1نوفمبر2020 </span>
+                </div>
+                <div class="c-summary c-summary--small c-summary--boxless">
+                    <div class="c-summary_data">
+                        <span class="c-summary_key">التغير الشهرى</span>
+                         <span class="c-summary_value c-summary_value--positive">16.6%</span>
+                    </div>
+                    <div class="c-summary_data">
+                        <span class="c-summary_key">المجموع</span>
+                         <span class="c-summary_value">$96343</span>
+                    </div>
+                    <div class="c-summary_data">
+                        <span class="c-summary_key">اخر ثلاثين يوم</span>
+                         <span class="c-summary_value">$1345</span>
+                    </div>
+                </div>
+                <div class="c-table_navigation">
+                    <div class="c-table_navigation_arrows">
+                        <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                        <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                    </div>
+                </div>
+
+            </header>
+            <canvas class="c-chart_data" id="example-chart" height="300" width="600"></canvas>
+
+        </div>
+    </div>
+    
+</body>
+</html>

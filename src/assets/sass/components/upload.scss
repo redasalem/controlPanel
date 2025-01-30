@@ -1,0 +1,99 @@
+.c-upload{
+    // @include e-card;
+    background-color: #fff;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: spacing("normal")  spacing("normal")  spacing("wide");
+}
+.c-upload_subtitle {
+    display: block;
+}
+.c-upload-header{
+    display: flex;
+    justify-content: space-between;
+}
+.c-upload_label{
+    cursor: pointer;
+    color: $color-link;
+    font-size: 14px;
+    margin-right: auto;
+}
+.c-upload_label--remove{
+    display: none;
+    color: $color-red;
+}
+.c-upload_body{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.c-upload_image{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/upload.svg') no-repeat center;
+    background-size: 160px;
+    margin-bottom: spacing('small');
+    img{
+        max-width: 100%;
+        height: auto;
+        display: inline;
+    }
+}
+.c-upload_field{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+
+}
+.c-upload_subtitle{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.c-upload--small{
+    min-width: initial;
+    min-height: initial;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+    
+    .c-upload_body{
+        @include e-card;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+    }
+    .c-upload_label{
+        margin-left: auto;
+
+
+    }
+    .c-upload_label--remove{
+        margin-right: inherit;
+    }
+
+}
+.has-image.c-upload{
+    .c-upload_label--remove{
+        display: block;
+    }
+    .c-upload_image{
+        background: none;
+        img{
+            display: block;
+        }
+    }
+}

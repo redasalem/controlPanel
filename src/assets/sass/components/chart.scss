@@ -1,0 +1,17 @@
+.c-chart{
+    @include e-card;
+    width: 100%;
+}
+.c-chart_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0  spacing('normal');
+}
+.c-chart_header_title{
+    margin-left: auto;
+}
+.c-chart_data{
+    font-size: 12px;
+    padding: spacing('small');
+}

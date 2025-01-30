@@ -1,5 +1,5 @@
 @mixin e-card{
-    background-color: #ffff;
+    background-color: #fff !important;
     border-radius: 3px;
     margin-bottom: spacing("normal");
     box-shadow: 0 1px 3px 0 rgba(darken($color-primary, 30%), 0.15),

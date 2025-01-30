@@ -16,10 +16,10 @@
 
 
 
-
-
-
-// $background-color:silver;
-// body{
-//     background-color: $background-color;
-// }
+body {
+    font-size: $font-base;
+    line-height: $line-hight;
+    color: $color-content;
+    background-color: $background-color;
+    font-family: $familty-content;
+  }

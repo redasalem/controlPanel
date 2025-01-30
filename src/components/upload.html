@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload components page</title>
+    <script type="text/html" src="{require('../index.js')}"></script>
+</head>
+<body>
+    <div class="component-container">
+        <div class="c-upload js-upload">
+            <header class="c-upload-header">
+                <h4 class="c-upload_title">صورة المتنج</h4>
+                <label for="upload-image" class="c-upload_label">ارفع الصورة</label>
+                <span class="c-upload_label c-upload_label--remove js-upload-remove">احذف الصورة</span>
+            </header>
+            <div class="c-upload_body">
+                <div class="c-upload_image"><img class="js-upload-placeholder"> </div>
+                <input type="file" name="upload-image" id="upload-image" class="c-upload_field js-upload-value" accept="image/*">
+                <span class="c-upload_subtitle">اسحب الصور هنا لرفعها</span>
+
+            </div>
+
+        </div>
+        <div class="c-upload c-upload--small js-upload">
+            <header class="c-upload-header">
+                <h4 class="c-upload_title">صورة المستخدم</h4>
+            </header>
+            <div class="c-upload_body">
+                <label for="upload-image" class="c-upload_label">ارفع الصورة</label>
+                <img class="js-upload-placeholder"> 
+                <input type="file" name="upload-image" id="upload-image" class="c-upload_field js-upload-value" accept="image/*">
+               
+            </div>
+            <span class="c-upload_label c-upload_label--remove js-upload-remove">احذف الصورة</span>
+
+        </div>
+    </div>
+    
+</body>
+</html>

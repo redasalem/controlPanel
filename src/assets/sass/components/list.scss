@@ -1,0 +1,27 @@
+.c-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $background-color;
+    padding: spacing('extra-small') spacing('small');
+    box-shadow: 0 0 0 1px rgba(black,0.05);
+}
+.c-list_media{
+    height: 60px;
+    width: auto;
+    margin-left: spacing('small');
+}
+.c-list_action{
+    margin-right: auto;
+    text-align: left;
+    margin-left: spacing('small');
+    opacity: 0;
+    transition: all  200ms ease;
+}
+.c-list_data{
+    flex-grow: 1;
+    margin-left: spacing('small');
+}
+.c-list:hover .c-list_action{
+    opacity: 1;
+}
