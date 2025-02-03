@@ -2,7 +2,9 @@
     @include e-card;
     display:flex;
     align-items: center;
+    justify-content: center;
     padding: spacing('small')  spacing('wide');
+    width: 25%;
 
 }
 .c-summary_data{
@@ -39,4 +41,20 @@
         font-weight: normal;
 
     }
+}
+@media (max-width:1150px) {
+    .c-summary{
+        width: 50%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+}
+@media (max-width:450px){
+    .c-summary{
+        width: 100%;
+    }
+
 }

@@ -1,0 +1,52 @@
+.page-container{
+    padding-right: $layout-sidebar + spacing('normal');
+    padding-left:spacing('normal') ;
+}
+.main-page{
+    background-image: url('../images/confitti.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.home-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: spacing('extra-wide');
+    margin-bottom: spacing('wide');
+    flex-wrap: wrap;
+}
+.welcome-tag{
+    font-size: 26px;
+}
+
+
+@media (max-width:768px) {
+    .page-container{
+        padding-right: $dense-wdith + spacing('small');
+        padding-left: spacing(small);
+    }
+    .home-intro{
+        margin: spacing('normal') 0 spacing('wide');
+
+
+
+    }
+    
+}
+
+@media (max-width:525px) {
+    .c-summary{
+        width: 80%;
+    }
+    .c-tabs{
+        width: 90%;
+        overflow-x: scroll;
+    }
+    .welcome-tag{
+        font-size: 24px;
+    }
+    .main-page{
+        background: none;
+    }
+    
+}

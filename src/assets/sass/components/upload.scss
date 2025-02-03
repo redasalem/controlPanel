@@ -84,6 +84,11 @@
     .c-upload_label--remove{
         margin-right: inherit;
     }
+    img{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
 
 }
 .has-image.c-upload{
@@ -94,6 +99,7 @@
         background: none;
         img{
             display: block;
+            width: 100%;
         }
     }
 }

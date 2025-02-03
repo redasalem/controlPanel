@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطلبات</title>
+</head>
+<body>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title"> الطلبات</h1>
+            </header>
+            <div class="c-table">
+                <header class="c-table_header">
+                    <div class="c-table_actions">
+                        <h3 class="c-table_title">المستخدمين</h3><br>
+                        <button class="c-btn c-btn--primary c-btn--slim">تم الشحن</button>
+                        <button class="c-btn c-btn--slim">تم المعالجة</button>
+                        <button class="c-btn c-btn--slim c-btn--destructive">حذف</button>
+                    </div>
+                    <div class="c-table_navigation">
+                        <span class="c-table_navigation_caption">6 من اصل 24 </span>
+                        <div class="c-table_navigation_arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </header>
+                <table class="c-table_data">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox"  id="select-all">
+                            </th>
+                            <th>
+                                <label for="select-all">تحديد الكل </label>
+                            </th>
+                            <th>اسم المنتج</th>
+                            <th>السعر الرئيسى</th>
+                            <th>السعر المحلى</th>
+                            <!-- <th>الكمية</th>
+                            <th>المبيعات</th>  -->
+    
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr class="c-list c-list--table-row">
+                            <td>
+                                <img src="./assets/images/black-shirt.jpg" alt="black-shirt" class="c-list_media">
+                            </td>   
+                            <td class="c-list_data"> قميص اسودm</td>
+                            <td class="c-list_data">على جابر</td>
+                            <td class="c-list_data">القاهرة-مصر </td>
+                            <td class="c-list_data">19.99$ </td>
+                            <td class="c-list_action">
+                                <a href="#" class="c-btn c-btn--primary c-btn--small">تم الشحن</a>
+                                <a href="#" class="c-btn c-btn--small">تواصل</a>
+                                <a href="#" class="c-btn c-btn--destructive c-btn--small">حذف الطلب</a>
+                            </td>
+                            </tr>
+                            <tr class="c-list c-list--table-row">
+                                <td>
+                                    <img src="./assets/images/black-shirt.jpg" alt="black-shirt" class="c-list_media">
+                                </td>   
+                                <td class="c-list_data"> قميص اسودm</td>
+                                <td class="c-list_data"> احمد ماهر</td>
+                                <td class="c-list_data">القاهرة-مصر </td>
+                                <td class="c-list_data">19.99$ </td>
+                                <td class="c-list_action">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--small">تم الشحن</a>
+                                    <a href="#" class="c-btn c-btn--small">تواصل</a>
+                                    <a href="#" class="c-btn c-btn--destructive c-btn--small">حذف الطلب</a>
+                                </td>
+                                </tr>
+                                <tr class="c-list c-list--table-row">
+                                    <td>
+                                        <img src="./assets/images/black-shirt.jpg" alt="black-shirt" class="c-list_media">
+                                    </td>   
+                                    <td class="c-list_data"> قميص اسودm</td>
+                                    <td class="c-list_data">محمود جابر</td>
+                                    <td class="c-list_data">سوريا </td>
+                                    <td class="c-list_data">19.99$ </td>
+                                    <td class="c-list_action">
+                                        <a href="#" class="c-btn c-btn--primary c-btn--small">تم الشحن</a>
+                                        <a href="#" class="c-btn c-btn--small">تواصل</a>
+                                        <a href="#" class="c-btn c-btn--destructive c-btn--small">حذف الطلب</a>
+                                    </td>
+                                    </tr>
+                                    <tr class="c-list c-list--table-row">
+                                        <td>
+                                            <img src="./assets/images/black-shirt.jpg" alt="black-shirt" class="c-list_media">
+                                        </td>   
+                                        <td class="c-list_data"> قميص اسودm</td>
+                                        <td class="c-list_data"> كريم حافظ</td>
+                                        <td class="c-list_data">القاهرة-مصر </td>
+                                        <td class="c-list_data">19.99$ </td>
+                                        <td class="c-list_action">
+                                            <a href="#" class="c-btn c-btn--primary c-btn--small">تم الشحن</a>
+                                            <a href="#" class="c-btn c-btn--small">تواصل</a>
+                                            <a href="#" class="c-btn c-btn--destructive c-btn--small">حذف الطلب</a>
+                                        </td>
+                                        </tr>
+                
+                        </div>
+                    </tbody>
+                </table>
+                <footer class="c-table_footer">
+                    <div class="c-table_navigation">
+                        <span class="c-table_navigation_caption">6 من اصل 24 </span>
+                        <div class="c-table_navigation_arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </footer>
+    
+            </div>
+            <help></help>
+        </div>
+    </div>
+    
+</body>
+</html>

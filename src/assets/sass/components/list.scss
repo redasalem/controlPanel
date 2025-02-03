@@ -25,3 +25,31 @@
 .c-list:hover .c-list_action{
     opacity: 1;
 }
+
+.c-list--table-row{
+    display: table-row;
+    background-color: white;
+
+}
+
+@media (max-width:690px){
+    .c-list{
+        flex-wrap: wrap;
+
+    }
+    .c-list_data:not(:first-of-type),.c-list_action{
+        padding-top:spacing('extra-small');
+        padding-bottom:spacing('extra-small');
+        border-top: 1px solid rgb(224, 228, 230);
+
+        width: 100%;
+    }
+    .c-list_action{
+        opacity: 1;
+        text-align: right;
+        margin-right: 0;
+        margin-left: initial;
+    }
+}
+
+

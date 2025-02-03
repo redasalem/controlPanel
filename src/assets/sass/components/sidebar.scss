@@ -1,6 +1,10 @@
 $sidebar_icon-width:35px;
 $sidebar_icon-size:20px;
 $sidebar-logo-hight:$sidebar_icon-width;
+$sidebar_dance_padding:spacing();
+$sidebar-normal-padding:spacing('small');
+$shift:$sidebar-normal-padding - $sidebar_dance_padding;
+$dense-wdith:$sidebar_icon-width + ($sidebar_dance_padding*2) + $shift;
 
 .c-sidebar{
     display: flex;
@@ -9,14 +13,27 @@ $sidebar-logo-hight:$sidebar_icon-width;
     position: fixed;
     top: 0;
     right:0;
-    background-color: rgb(197, 223, 231);
     padding:spacing('wide') spacing('small');
+    transition:transform 200ms 200ms ,width 0s 200ms ,padding-left 0s 200ms;
+    z-index: 10;
+}
+.c-sidbar_backdrop{
+    position: absolute;
+    height:100%;
+    right: 0;
+    top: 0;
+    width: $layout-sidebar;
+    background-color: rgba($color:skyblue, $alpha: 0.5);
+    z-index: -999;
+  
 }
 .c-sidebar-control{
     display: flex;
     width: $sidebar_icon-width;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 20;
 }
 .c-sidebar_icon{
     width: $sidebar_icon-size;
@@ -74,4 +91,45 @@ $sidebar-logo-hight:$sidebar_icon-width;
     flex-direction: row-reverse;
     justify-content: flex-end;
 
+}
+
+
+@media (max-width:768px) {
+    .c-sidebar{
+        overflow: hidden;
+        width:$dense-wdith;
+        padding: 0;
+        transform: scaleX($shift);
+    }
+    .c-sidbar_backdrop{
+        transform: scaleX(#{$dense-wdith / $layout-sidebar});
+        transform-origin:100% 0;
+        transition: transform 200ms;
+
+    }
+    .c-sidebar_menu{
+        opacity: 0;
+        transform: opacity 200ms 0s;
+    }
+    .c-sidebar:hover{
+        width: $layout-sidebar;
+        overflow: visible;
+        padding-left: spacing("small");
+        transform: scaleX(1);
+        transition-delay: 0;
+        transition: transform 200ms;
+        .c-sidbar_backdrop{
+            transform: scaleX(1);
+        }
+        .c-sidebar_menu{
+            opacity: 1;
+            transition-delay: 200ms;
+        }
+
+
+    }
+
+
+
+    
 }

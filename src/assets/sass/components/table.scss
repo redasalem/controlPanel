@@ -10,12 +10,14 @@ $product-media-size:40px;
     align-items:center;
     margin-bottom: spacing('small');
     padding: 0 spacing('normal');
+    flex-wrap: wrap;
 }
 .c-table_navigation{
     // margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: spacing();
 }
 .c-table_navigation_arrows{
     margin-right: spacing('small');
@@ -37,13 +39,7 @@ $product-media-size:40px;
         }
         padding: spacing('extra-small') 0;
         border-bottom: 1px solid rgba(darken(#FFF,40%),0.15);
-        img{
-            width: $product-media-size;
-            height: $product-media-size;
-            vertical-align: middle;
-        }
-
-
+       
     }
    
       
@@ -68,3 +64,10 @@ $product-media-size:40px;
     text-align: center;
     width: 40px;
 }
+img{
+    width: $product-media-size;
+    height: $product-media-size;
+    vertical-align: middle;
+}
+
+

@@ -4,7 +4,7 @@ $color-banner-lighter:#e0f5f5;
 $color-banner-dark:#00848e;
 $icon-size:32px;
 .c-banner{
-    @include e-card;
+    // @include e-card;
     background-color: $color-banner-lighter;
     border-top:3px solid  $color-banner-dark;
     padding: spacing("small") spacing("extra-wide");
@@ -41,7 +41,7 @@ $icon-size:32px;
 .c-banner_icon{
     right: spacing("normal");
     color: $color-banner-dark;
-    background-color: $color-banner-light;
+     background-color: $color-banner-light;
     border-radius: 50%;
     line-height: $icon-size !important;
     width: $icon-size !important;
